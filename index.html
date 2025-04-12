@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Occurrences & Anagram Checker</title>
+  </head>
+  <body>
+    <div id="app">
+      <h2>Counting the number of numbers</h2>
+      <input
+        id="number-input"
+        type="text"
+        placeholder="Example: 20, 20, 3, 3, 1, 1"
+      />
+      <button id="count-btn">Count the number of identical numbers</button>
+
+      <h3>Results:</h3>
+      <div id="number-output"></div>
+
+      <div class="line"></div>
+
+      <h2>Anagram check</h2>
+      <input
+        id="word-input"
+        type="text"
+        placeholder="Word (for example, bread)"
+      />
+      <input
+        id="anagram-input"
+        type="text"
+        placeholder="anagram (for example, daerb)"
+      />
+      <button id="check-anagram-btn">Check the anagram</button>
+
+      <h3>Result:</h3>
+      <div id="anagram-output"></div>
+    </div>
+
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>

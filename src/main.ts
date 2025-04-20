@@ -1,28 +1,25 @@
-// unoin
-function kgToGr(kg: number | string) {
-  // Narrowing type
-  if (typeof kg === 'string') {
-    kg = parseFloat(kg);
-  }
-  return kg = 1000;
-}
-//  literals types
-
-let a: 50 | 75 | 100 | "abc";
-
-//  intersection types 
-
-type A = { a: string };
-type B = { b: number };
-type C = string & number;
-let obj: C = { a: "hello", b: 42 };
-type D = string & number;
-
-type Product = {
+type Person = {
   id: number;
-  name: string;
-  price: number;
+  age: number;
+  name?: string;
+}
+const people : Person[] = [
+  {id: 1, age: 25},
+  {id: 2, age: 30},
+  {id: 3, age: 35}
+];
+
+
+function findPersonById(people: Person[], id: number): Person | undefined {
+  return people.find(person => person.id === id)!;
 }
 
-let productKey: keyof Product;
-productKey = "id";
+
+const person = findPersonById(people, 20);
+  console.log(person?.name?.length);
+
+  function getPersonName({name = "Vasya"}:Person): string {
+    return name; 
+  }
+  console.log(getPersonName(people[0]));
+  

@@ -1,10 +1,28 @@
-enum DayOfWeek {
-  Sunday, Monday, Tuesday="Tue", Wednesday=0, Thursday, Friday, Saturday,
-   Sun = 0, Mon, Tue, Wed, Thu, Fri, Sat
+// unoin
+function kgToGr(kg: number | string) {
+  // Narrowing type
+  if (typeof kg === 'string') {
+    kg = parseFloat(kg);
+  }
+  return kg = 1000;
+}
+//  literals types
+
+let a: 50 | 75 | 100 | "abc";
+
+//  intersection types 
+
+type A = { a: string };
+type B = { b: number };
+type C = string & number;
+let obj: C = { a: "hello", b: 42 };
+type D = string & number;
+
+type Product = {
+  id: number;
+  name: string;
+  price: number;
 }
 
-let dayOfWeek1 = DayOfWeek.Sunday;
-let dayOfWeek2 = DayOfWeek.Sun;
-if (dayOfWeek1 === dayOfWeek2){
-  console.log("The same day of the week");
-}
+let productKey: keyof Product;
+productKey = "id";

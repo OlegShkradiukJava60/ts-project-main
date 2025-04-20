@@ -94,13 +94,3 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
-
-.line{ 
-  width: 100%;
-  border: 2px solid #ffffff;
-  margin: 10px 0;
-}
-
-#count-btn, #check-anagram-btn {
-  margin:10px;
-}

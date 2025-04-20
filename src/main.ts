@@ -1,6 +1,6 @@
 enum DayOfWeek {
-  Sunday, Monday, Tuesday, Wednesday, Thursday, Friday, Saturday,
-   Sun, Mon, Tue, Wed, Thu, Fri, Sat
+  Sunday, Monday, Tuesday="Tue", Wednesday=0, Thursday, Friday, Saturday,
+   Sun = 0, Mon, Tue, Wed, Thu, Fri, Sat
 }
 
 let dayOfWeek1 = DayOfWeek.Sunday;

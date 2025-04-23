@@ -1,13 +1,41 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + TS</title>
+    <title> TS</title>
   </head>
   <body>
-    <div id="app"></div>
-    <script type="module" src="/src/main.ts"></script>
+    <div id="app">
+      <h2>Enter numbers :</h2>
+      <input
+        id="number-input"
+        type="text"
+        placeholder="exemple 20, 20, 3, 3, 1, 1"
+      />
+      <button id="count-btn">Count Occurrences</button>
+
+      <h3>Results:</h3>
+      <div id="number-output"></div>
+
+      <hr />
+
+      <h2>Check for Anagram</h2>
+      <input
+        id="word-input"
+        type="text"
+        placeholder="Original word (exemple listen)"
+      />
+      <input
+        id="anagram-input"
+        type="text"
+        placeholder="Possible anagram (exemple silent)"
+      />
+      <button id="check-anagram-btn">Check Anagram</button>
+      <h3>Anagram Result:</h3>
+      <div id="anagram-output"></div>
+    </div>
+    <script type="module" src="/src/Occurrences.ts"></script>
   </body>
 </html>

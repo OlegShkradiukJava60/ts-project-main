@@ -78,12 +78,4 @@ function update<T> (obj: T, updater: Partial<T>): void {
     }
 }
 
-type Person = {
-  id: number;
-  age: number;
-  city: string;
-};
-
-const person: Person = { id: 123, age: 25, city: "Lod" };
-update{person, {age: 26, city: "Rehovot"}};
 

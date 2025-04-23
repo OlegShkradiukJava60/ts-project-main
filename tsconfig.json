@@ -1,4 +1,5 @@
 {
+  
   "compilerOptions": {
     "target": "ES2020",
     "useDefineForClassFields": true,
@@ -18,8 +19,7 @@
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true,
-    "noUncheckedSideEffectImports": true,
-    "noImplicitAny": true
+    "noUncheckedSideEffectImports": true
   },
   "include": ["src"]
 }

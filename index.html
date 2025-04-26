@@ -1,41 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>TS</title>
-  </head>
-  <body>
-    <div id="app">
-      <h2>Enter numbers :</h2>
-      <input
-        id="number-input"
-        type="text"
-        placeholder="exemple 20, 20, 3, 3, 1, 1"
-      />
-      <button id="count-btn">Count Occurrences</button>
+<head>
+    <meta charset="UTF-8">
+    <title>Employee Store</title>
+    <link rel="stylesheet" href="./src/style.css">
+</head>
+<body>
+    <h1>Employee Store</h1>
 
-      <h3>Results:</h3>
-      <div id="number-output"></div>
-
-      <hr />
-
-      <h2>Check for Anagram</h2>
-      <input
-        id="word-input"
-        type="text"
-        placeholder="Original word (exemple listen)"
-      />
-      <input
-        id="anagram-input"
-        type="text"
-        placeholder="Possible anagram (exemple silent)"
-      />
-      <button id="check-anagram-btn">Check Anagram</button>
-      <h3>Anagram Result:</h3>
-      <div id="anagram-output"></div>
+    <div class="section">
+        <h2>Add Employee</h2>
+        <input type="text" id="addId" placeholder="ID">
+        <input type="text" id="addName" placeholder="Name">
+        <input type="number" id="addSalary" placeholder="Salary">
+        <button id="addEmployeeBtn">Add Employee</button>
     </div>
-    <script type="module" src="/src/main.ts"></script>
-  </body>
+
+    <div class="section">
+        <h2>Find Employee</h2>
+        <input type="text" id="findId" placeholder="ID">
+        <button id="findEmployeeBtn">Find Employee</button>
+    </div>
+
+    <div class="section">
+        <h2>Remove Employee</h2>
+        <input type="text" id="removeId" placeholder="ID">
+        <button id="removeEmployeeBtn">Remove Employee</button>
+    </div>
+
+    <div class="section">
+        <h2>Get Employee By ID</h2>
+        <input type="text" id="getById" placeholder="ID">
+        <button id="getEmployeeBtn">Get Employee</button>
+    </div>
+
+    <h2>Result</h2>
+    <div id="result"></div>
+
+    <script type="module" src="./src/main.ts"></script>
+
+</body>
 </html>
